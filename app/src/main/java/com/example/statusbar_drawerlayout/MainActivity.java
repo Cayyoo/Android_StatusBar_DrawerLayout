@@ -11,6 +11,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
+
 import com.example.statusbar_drawerlayout.base.BaseActivity;
 
 import java.util.ArrayList;
@@ -71,6 +73,19 @@ public class MainActivity extends BaseActivity {
                         break;
                     case R.id.nav_item4:
                         startActivity(PlanThreeActivity.class);
+                        break;
+                    case R.id.nav_share:
+                        Toast.makeText(MainActivity.this,"nav_share",Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.nav_send:
+                        Toast.makeText(MainActivity.this,"nav_send",Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.nav_camera:
+                        Toast.makeText(MainActivity.this,"nav_camera",Toast.LENGTH_SHORT).show();
+                        break;
+                    //还有三个没写
+
+                    default:
                         break;
                 }
 
