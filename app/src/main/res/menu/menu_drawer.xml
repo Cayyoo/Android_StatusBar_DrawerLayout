@@ -11,6 +11,7 @@
             android:id="@+id/nav_item2"
             android:icon="@android:drawable/ic_menu_compass"
             android:title="tab 切换" />
+
         <item
             android:id="@+id/nav_item3"
             android:icon="@android:drawable/ic_menu_add"
@@ -20,6 +21,38 @@
             android:id="@+id/nav_item4"
             android:icon="@android:drawable/ic_menu_add"
             android:title="第三种方案" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share"/>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send"/>
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Import"/>
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery"/>
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Slideshow"/>
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools"/>
     </group>
 
 </menu>
