@@ -1,25 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <!--选项菜单项放在Action Bar的右上角，这个属性可接受的值有：
+        1、always：这个值会使菜单项一直显示在Action Bar上。
+        2、ifRoom：如果有足够的空间，这个值会使菜单项显示在Action Bar上。
+        3、never：这个值使菜单项永远都不出现在Action Bar上。
+        4、withText：这个值使菜单项和它的图标，菜单文本一起显示。-->
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_item1"
             android:icon="@android:drawable/ic_menu_add"
+            app:showAsAction="ifRoom|withText"
             android:title="页面顶部是一张图片" />
 
         <item
             android:id="@+id/nav_item2"
             android:icon="@android:drawable/ic_menu_compass"
+            app:showAsAction="ifRoom|withText"
             android:title="tab 切换" />
 
         <item
             android:id="@+id/nav_item3"
             android:icon="@android:drawable/ic_menu_add"
+            app:showAsAction="ifRoom|withText"
             android:title="第二种方案" />
 
         <item
             android:id="@+id/nav_item4"
             android:icon="@android:drawable/ic_menu_add"
+            app:showAsAction="ifRoom|withText"
             android:title="第三种方案" />
     </group>
 
@@ -28,10 +38,12 @@
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"
+                app:showAsAction="ifRoom|withText"
                 android:title="Share"/>
             <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"
+                app:showAsAction="ifRoom|withText"
                 android:title="Send"/>
         </menu>
     </item>
@@ -40,18 +52,22 @@
         <item
             android:id="@+id/nav_camera"
             android:icon="@drawable/ic_menu_camera"
+            app:showAsAction="ifRoom|withText"
             android:title="Import"/>
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
+            app:showAsAction="ifRoom|withText"
             android:title="Gallery"/>
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
+            app:showAsAction="ifRoom|withText"
             android:title="Slideshow"/>
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
+            app:showAsAction="ifRoom|withText"
             android:title="Tools"/>
     </group>
 
